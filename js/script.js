@@ -49,7 +49,7 @@ for(let i = 0; i < moreInfoBtns.length; i++){
 	moreInfoBtns[i].addEventListener('click', function(){
 		let xhr = new XMLHttpRequest();
 
-		xhr.open('GET', '../modal.html', true);
+		xhr.open('GET', '/modal.html', true);
 
 		xhr.onload = function(){
 			if(this.status === 200){
