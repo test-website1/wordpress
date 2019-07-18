@@ -1,0 +1,100 @@
+.modal-fade.active-fadeness{
+	width: 100%;
+	height: 100vh;
+	opacity: .6;
+	visibility: visible;
+	background-color: #000;
+	position: fixed;
+	top: 0;
+	left: 0;
+}
+
+.modal-wrapper{
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 0;
+}
+.modal-wrapper .modal{
+	width: 90%;
+	height: 90%;
+	max-width: 1200px;
+	max-height: 900px;
+	background-color: #fff; 
+	color: #000;
+	display: block;
+	border-radius: 10px;
+	opacity: 1;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	text-align: center;
+	transition: .3s ease-in-out;
+}
+.modal .slick-slider{
+	width: 100%;
+	max-width: 500px;
+	height: 50%;
+	max-height: 300px;
+	margin: 30px auto;
+	position: relative;
+}
+
+.slide {
+	max-width: 500px;
+	max-height: 300px;
+	outline: none;
+}
+
+.modal img {
+	width: 100%;
+	height: 100%;
+}
+.modal .description{
+	margin: 0 auto;
+	margin-top: 50px;
+	max-width: 700px;
+	padding: 0 10px;
+	box-sizing: border-box;
+}
+.modal .close-modal{
+	background: linear-gradient(244.98deg, #1A48EE -24.06%, rgba(158, 0, 255, 0.473958) 102.53%, rgba(32, 76, 233, 0) 102.54%, rgba(151, 4, 254, 0.502214) 102.54%);
+	border-radius: 100px;
+	border: none;
+	outline: none;
+	padding: 12px 40px;
+	cursor: pointer;
+	font-weight: bold;
+	font-size: 12px;
+	text-transform: uppercase;
+	color: #fff;
+	margin-top: 40px;
+}
+
+ @media screen and (max-width: 768px){
+ 	.modal .description p{
+ 		font-size: 14px;
+ 	}
+
+ 	.modal .close-modal{
+ 		padding: 10px 35px;
+ 		font-size: 10px;
+ 	}
+ }
+
+@media screen and (max-width: 575px) {
+	.modal .slick-slider {
+		margin-left: auto;
+		margin-right: auto;
+		width: 95%;
+		height: auto;
+		max-height: 300px;
+	}
+}
